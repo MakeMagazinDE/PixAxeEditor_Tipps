@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>I2C read</Title>
+      <Author>Make</Author>
+      <Description>Read data from I2C bus.</Description>
+      <Shortcut>hi2cin</Shortcut>
+    </Header>
+    <Snippet>
+      <Imports>
+      </Imports>
+      <Declarations>
+        <Literal>
+          <ID>address</ID>
+          <Type>Variable or Number</Type>
+          <ToolTip>Replace with the byte or word address.</ToolTip>
+          <Default>address</Default>
+        </Literal>
+        <Literal>
+          <ID>data</ID>
+          <Type>Variable or Number</Type>
+          <ToolTip>Replace with the variable(s) that receive the data byte(s) read.</ToolTip>
+          <Default>b0</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="PICAXE" Kind="method body"><![CDATA[hi2cin $address$, ($data$)
+]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>subroutine</Title>
+      <Author>Make</Author>
+      <Description>Generates a subroutine with comment head.</Description>
+      <Shortcut>subroutine</Shortcut>
+    </Header>
+    <Snippet>
+      <Imports>
+      </Imports>
+      <Declarations>
+        <Literal>
+          <ID>description</ID>
+          <Type>Variable or Number</Type>
+          <ToolTip>Replace with a short description.</ToolTip>
+          <Default>Short description.</Default>
+        </Literal>
+        <Literal>
+          <ID>parameter</ID>
+          <Type>Variable or Number</Type>
+          <ToolTip>Replace with parameter name.</ToolTip>
+          <Default>b0</Default>
+        </Literal>
+        <Literal>
+          <ID>paramdescription</ID>
+          <Type>Variable or Number</Type>
+          <ToolTip>Replace with parameter description.</ToolTip>
+          <Default>Input parameter</Default>
+        </Literal>
+        <Literal>
+          <ID>return</ID>
+          <Type>Variable or Number</Type>
+          <ToolTip>Replace with returnvalue.</ToolTip>
+          <Default>b1</Default>
+        </Literal>
+        <Literal>
+          <ID>returndescription</ID>
+          <Type>Variable or Number</Type>
+          <ToolTip>Replace with returnvalue description.</ToolTip>
+          <Default>Result</Default>
+        </Literal>
+        <Literal>
+          <ID>subname</ID>
+          <Type>Variable or Number</Type>
+          <ToolTip>Replace with the subroutine name.</ToolTip>
+          <Default>subname</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="PICAXE" Kind="method body"><![CDATA[#rem
+/**
+ * @brief $description$
+ * @param $parameter$ $paramdescription$
+ * @return $return$ $returndescription$
+ */
+#endrem	  
+
+$subname$:
+
+return
+]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
